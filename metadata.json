@@ -1,0 +1,6 @@
+{
+  "name": "Leenu — Voice Assistant for Laureen Simberg",
+  "description": "Minimalist, sophisticated voice assistant representing Estonian biathlete and investor Laureen Simberg in English and Estonian.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

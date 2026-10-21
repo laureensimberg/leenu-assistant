@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-cream: #FAF8F5;
+    --bg-surface: #FFFFFF;
+    --bg-warm: #F4EFE6;
+    --border-subtle: #E8E2D5;
+    --text-primary: #1F1D1A;
+    --text-secondary: #6B655B;
+    --text-muted: #9E9689;
+    --accent-gold: #9B7B4B;
+    --accent-hover: #83673C;
+  }
+
+  body {
+    background-color: var(--bg-cream);
+    color: var(--text-primary);
+    font-family: 'Newsreader', Georgia, serif;
+  }
+}
+
+.font-serif-display {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-serif-body {
+  font-family: 'Newsreader', Georgia, serif;
+}
+
+.font-sans-ui {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Custom scrollbar for minimalist look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E0D9CB;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C4BCAC;
+}
+
+@keyframes gentle-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.06);
+    opacity: 1;
+  }
+}
+
+.animate-gentle-pulse {
+  animation: gentle-pulse 2.4s ease-in-out infinite;
+}
+
+@keyframes sound-wave {
+  0%, 100% {
+    height: 6px;
+  }
+  50% {
+    height: 28px;
+  }
+}
+
+.animate-wave-1 { animation: sound-wave 1.2s ease-in-out infinite; }
+.animate-wave-2 { animation: sound-wave 1.2s ease-in-out 0.2s infinite; }
+.animate-wave-3 { animation: sound-wave 1.2s ease-in-out 0.4s infinite; }
+.animate-wave-4 { animation: sound-wave 1.2s ease-in-out 0.1s infinite; }
+.animate-wave-5 { animation: sound-wave 1.2s ease-in-out 0.3s infinite; }
